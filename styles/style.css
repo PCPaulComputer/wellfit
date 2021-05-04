@@ -1,0 +1,130 @@
+/*style.css*/
+/*Author: Paul Madduma*/
+
+a {
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* a:active {
+    font-family: "Courier New", Courier, monospace;
+    color: red;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+a:hover {
+    font-family: "Courier New", Courier, monospace;
+    color: orange;
+    font-weight: bold;
+    font-size: 2em;
+} */
+
+body{
+    margin: 10px;
+    padding:10px;
+    text-align: center;
+    background-color: lightgreen;
+}
+
+fieldset{
+    padding: 10px;
+    margin: 10px;
+}
+
+form{
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 3em;
+    display: center;
+}
+
+h2{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+h3{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1em;
+    line-height: 2em;
+    display: center;
+} 
+
+h4 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.75em;
+}
+
+input[type = submit] {
+    background-color: blue;
+    padding:10px;
+    color: white;
+    font-family: "Lucida Console", Monaco, monospace;
+    margin: 10px;
+    padding: 10px;
+}
+
+input[type = text], input[type = number],
+input[type = date], input[type = password]{
+   margin: 10px;
+   padding: 10px;
+   font-weight: bold;
+}
+
+label, p {
+    font-family: "Courier New", Courier, monospace;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+table, td, th {
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid black;
+    display: center;
+    padding: 10px;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.good{
+    color: darkgreen;
+}
+
+.rad{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.wrong{
+    color: darkred;
+}
+
+body {
+    background-image: url('./images/gym.png');
+    width: 100%;
+    height: auto;
+}
+
+.center-div {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
