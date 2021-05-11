@@ -1,7 +1,7 @@
     <?php
     // Paul Madduma
     // Registration Page
-    require_once './templates/header.tpl.php';
+    require_once '../templates/header.tpl.php';
     /*
      * placing all the sessions for variables 
      * @param $firstname, $lastname, $id, $age, $address, 
@@ -13,9 +13,9 @@
      * @return members table, use bindValue to passthrough
      * values and variables effectively link database
      */
-    include 'connect.php'; ?>
+    include '../utilities/connect.php'; ?>
         <!--Navigation template -->
-        <?php require_once './templates/navigation.tpl.php'; ?>
+        <?php require_once '../templates/navigation.tpl.php'; ?>
 
         <!-- CONTENT -->
         <div id="main" class="img-fluid h-2000 bg bg-success" style="background-image: url('./images/gym.png');">
@@ -145,9 +145,9 @@
             <br>
 
             <!--Logout template -->
-            <?php require_once './templates/logout.tpl.php' ?>
+            <?php require_once '../templates/logout.tpl.php' ?>
         </div>
     
 <!--FOOTER -->  
-<?php require_once './templates/footer.tpl.php'; ?>
+<?php require_once '../templates/footer.tpl.php'; ?>
 

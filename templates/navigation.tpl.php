@@ -23,7 +23,7 @@
                     <a class="nav-link" href="delete.php">Delete</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-danger text-light font-weight-bold" href = "index.php" value = "<?php session_destroy();?>">Logout</a>
+                    <a class="nav-link btn btn-danger text-light font-weight-bold" href = "../index.php" value = "<?php session_destroy();?>">Logout</a>
                 </li>
             </div>
     </nav>

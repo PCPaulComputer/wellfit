@@ -3,9 +3,9 @@
  * Author: Paul Madduma
  * Navigation, information search page 
  */
-require_once './templates/header.tpl.php';
+require_once '../templates/header.tpl.php';
 session_start();
-include 'connect.php';
+include '../utilities/connect.php';
 $_SESSION["username"] = isset($_POST["username"]);
 $_SESSION["password"] = isset($_POST["password"]);
 $id = "";
@@ -17,7 +17,7 @@ $membershipdate = "";
 $accommodation = "";
 ?>
     <!--Navigation template -->
-    <?php require_once './templates/navigation.tpl.php'; ?>
+    <?php require_once '../templates/navigation.tpl.php'; ?>
     <div class="image-fluid" style="background-image:url('./images/gym_picture.png'); height:100%; width:100%; background-repeat:no-repeat;
         background-size:cover;">
         <h1 class="text-center text-light my-4 p-4 bg bg-secondary w-50 mx-auto">Search</h1>    
@@ -252,13 +252,12 @@ $accommodation = "";
                 <div class="col-md-2 col-sm-1 col-xs-1"></div>
             </div>
             <?= $message ?>
-            <!--Logout template -->
-            <?php require_once './templates/logout.tpl.php' ?>
+
         </div>
         
         <!--Printing research records-->
         <!--Logout template -->
-        <?php require_once './templates/logout.tpl.php' ?>
+        <?php require_once '../templates/logout.tpl.php'; ?>
     </div>
         
-<?php require_once './templates/footer.tpl.php'; ?>
+<?php require_once '../templates/footer.tpl.php'; ?>

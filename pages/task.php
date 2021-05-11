@@ -5,9 +5,9 @@
      * (staff, admin) has been authorized and authenticated their login 
      * credentials from index.php
      */
-    require_once './templates/header.tpl.php'; 
+    require_once '../templates/header.tpl.php'; 
     session_start();
-    include 'connect.php';
+    include '../utilities/connect.php';
     $_SESSION['username'] = isset($_POST['username']);
     $_SESSION['password'] = isset($_POST['password']);
     $_SESSION['login'] = true;
@@ -35,8 +35,8 @@
                 <input type ="submit" name="search" value = "Search a record" class="btn btn-lg btn-primary btn-block w-100 text-center mx-auto">
             </form>
             <!--Logout template -->
-            <?php require_once './templates/logout.tpl.php' ?>
+            <?php require_once '../templates/logout.tpl.php' ?>
         </div>
         
     </div>      
-<?php require_once './templates/footer.tpl.php'; ?>
+<?php require_once '../templates/footer.tpl.php'; ?>

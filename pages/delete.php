@@ -3,14 +3,14 @@
  * Author: Paul Madduma
  * Delete page
  */
-    require_once './templates/header.tpl.php';
+    require_once '../templates/header.tpl.php';
     session_start();
      
     // Navigation template
-    require_once './templates/navigation.tpl.php';
+    require_once '../templates/navigation.tpl.php';
     $message = '';
-    include 'connect.php';
-    include 'validation.php';
+    include '../utilities/connect.php';
+    include '../utilities/validation.php';
     //error checking invalid inputs
         
     if (isset($_POST['delete'])) {
@@ -48,7 +48,7 @@
             </div>
             <?= $message ?>
             <!--Logout template -->
-            <?php require_once './templates/logout.tpl.php' ?>
+            <?php require_once '../templates/logout.tpl.php' ?>
         </div>
         
-<?php require_once './templates/footer.tpl.php'; ?>
+<?php require_once '../templates/footer.tpl.php'; ?>

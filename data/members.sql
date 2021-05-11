@@ -1,10 +1,8 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
--- --------------------------------------------------------
-
 --
--- Table structure for table `members`
+-- Create table `members`
 --
 
 CREATE TABLE IF NOT EXISTS `members` (
@@ -19,11 +17,11 @@ CREATE TABLE IF NOT EXISTS `members` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `members`
+-- Entering data for table `members`
 --
 
 INSERT INTO `members` (`firstname`, `lastname`, `id`, `age`, `address`, `membershipdate`, `accommodation`) VALUES
-(' Brenda', 'House', 1000, 56, '10 main Street', '2012-12-12', '      afdsafdasdsadsaas  '),
+(' Brenda', 'House', 1000, 56, '10 main Street', '2012-12-12', 'afdsafdasdsadsaas'),
 ('Simon ', 'Peters', 1001, 25, '', '2019-06-01', NULL),
 ('Bethsaida ', 'Andrews', 1002, 0, '', '0000-00-00', NULL),
 ('James', 'Burgess', 1003, 25, '', '0000-00-00', NULL),
@@ -33,8 +31,8 @@ INSERT INTO `members` (`firstname`, `lastname`, `id`, `age`, `address`, `members
 ('Tomas', 'Diloronso', 1007, 24, '', '2019-06-05', NULL),
 ('Matthew', 'Cinaughfe', 1008, 23, '', '2019-06-01', NULL),
 ('Zia', 'Simon', 1009, 35, '', '2019-06-02', NULL),
-('dsffsdf', 'dsfsdfsd', 1052, 5624, 'sdasdasdasdasdasdsad', '2015-01-01', '     fdgdsgasgasdvxzcvxzcvczvvsrfegx           '),
-('fgjgdgh', 'hfhdhd', 1054, 45, 'fgfgfgfgjdfgjf', '2015-01-01', '         vnnbncbc       '),
+('dsffsdf', 'dsfsdfsd', 1052, 5624, 'sdasdasdasdasdasdsad', '2015-01-01', 'fdgdsgasgasdvxzcvxzcvczvvsrfegx'),
+('fgjgdgh', 'hfhdhd', 1054, 45, 'fgfgfgfgjdfgjf', '2015-01-01', 'vnnbncbc'),
 ('vjfxfgx', 'gxfjfx', 1078, 120, 'vjvjkfg', '2015-01-01', '            hjhjhhhgg    '),
 ('John', 'Smith', 1234, 52, 'John St', '2012-12-12', '             cxvxcvxcvzx   '),
 ('Peter', 'Griffin', 1235, 62, '10 Avenue St.', '2015-06-05', '        safsafaf        '),
@@ -54,6 +52,6 @@ INSERT INTO `members` (`firstname`, `lastname`, `id`, `age`, `address`, `members
 ('Chloe', 'Cardashitu', 7891, 45, '67 Main Street', '2017-04-06', 'dsfdsfdsfsdfvfdbyjytmgh '),
 ('vcxvc123', 'vcxvcx1212', 2343, 56, 'dsfasdfddsfsd', '2018-04-05', ' dsfsdfsdf           '),
 ('121212', '212121', 2212, 56, '67 gewpjergiobgfdgdf', '2019-01-05', '        vbnnfdhgytuytujfhgfhjh    '),
-('gfdgd3432', 'wre235w3r', 43, 5648, '10 hefwepofgwepf Strett', '2016-03-05', 'sdgsdgfdgdfs       '),
+('gfdgd3432', 'wre235w3r', 43, 5648, '10 hefwepofgwepf Strett', '2016-03-05', 'sdgsdgfdgdfs'),
 ('213234', '2132', 4545, 25, 'dsadsfdsfd', '2010-01-01', '            ');
 

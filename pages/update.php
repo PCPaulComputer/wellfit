@@ -1,5 +1,5 @@
     <?php
-    require_once './templates/header.tpl.php';
+    require_once '../templates/header.tpl.php';
     session_start();
     /*
      * Author: Paul Madduma
@@ -9,7 +9,7 @@
      * @return $firstname, $lastname, $id, $age,
      * $address, $membershipdate, $accommodation
      */
-    include 'connect.php';
+    include '../utilities/connect.php';
     $message = '';
     $firstname = '';
     $lastname = '';
@@ -103,7 +103,7 @@
     /*
      * update query based on id (primary key)
      */
-    include 'connect.php';
+    include '../utilities/connect.php';
     $query = "UPDATE `members` SET firstname = :firstname, lastname = :lastname, id = :id, age = :age,"
             . "address = :address, membershipdate = :membershipdate, accommodation = :accommodation "
             . "WHERE id = :id";
@@ -133,7 +133,7 @@
     ?>
 
     <!--Navigation template -->
-    <?php require_once './templates/navigation.tpl.php'; ?>
+    <?php require_once '../templates/navigation.tpl.php'; ?>
     
     <!-- FORM -->
     <div id="main" class="img-fluid h-2000 bg bg-success" style="background-image: url('./images/gym.png'); height: 1000px;">
@@ -172,7 +172,7 @@
         
         <br>
         <!--Logout template -->
-        <?php require_once './templates/logout.tpl.php' ?>
+        <?php require_once '../templates/logout.tpl.php' ?>
     </div>
     
-<?php require_once './templates/footer.tpl.php'; ?>
+<?php require_once '../templates/footer.tpl.php'; ?>
