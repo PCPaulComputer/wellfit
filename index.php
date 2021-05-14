@@ -73,7 +73,7 @@
             $_SESSION['outcomeWord'] = $outcomeWord;
     } }
     ?>
-        <div id="main" class="img-fluid h-2000 bg bg-success" style="background-image: url('./images/gym.png');">
+        <div id="main" class="img-fluid h-2000 bg bg-success" style="background-image: url('./images/gym.png'); overflow: hidden;">
             <div class="row mb-4 mb-4">
                 <div class="col-md-4"></div>
                 <div class="col-md-4 w-25 mx-auto my-4 bg bg-info w-75">

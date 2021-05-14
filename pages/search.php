@@ -20,7 +20,7 @@ $accommodation = "";
     <?php require_once '../templates/navigation.tpl.php'; ?>
     <div class="image-fluid" style="background-image:url('./images/gym_picture.png'); height:100%; width:100%; background-repeat:no-repeat;
         background-size:cover;">
-        <h1 class="text-center text-light my-4 p-4 bg bg-secondary w-50 mx-auto">Search</h1>    
+        <h1 class="text-center text-light mb-4 p-4 bg bg-secondary w-50 mx-auto">Search</h1>    
         <!-- FORM -->
             <div class="row my-2">
                 <div class="col-md-2 col-sm-1 col-xs-1"></div>
@@ -50,7 +50,7 @@ $accommodation = "";
                     $membershipdate = "";
                     $accommodation = "";
                     
-                    include 'validation.php';
+                    include '../utilities/validation.php';
                     /*
                     * Searching records individually 
                     * @param $id (primary key) because each record is unique
@@ -120,40 +120,44 @@ $accommodation = "";
             </div>
             <br>
         </div>
-       
-        <div class="mx-2">
-            <table class="table table-responsive border border-dark">
-                <tr>
-                    <th scope="row">ID</th>
-                    <td><?php echo $id; ?></td>                   
-                </tr>
-                <tr>
-                    <th scope="row">First Name</th>  
-                    <td><?php echo $firstname; ?></td>                 
-                </tr>
-                <tr>
-                    <th scope="row">Last Name</th>
-                    <td><?php echo $lastname; ?></td>                
-                </tr>
-                <tr>
-                    <th scope="row">Age</th>
-                    <td><?php echo $age; ?></td>
-                </tr>
-                <tr>
-                    <th scope="row">Address</th>
-                    <td><?php echo $address; ?></td>                  
-                </tr>
-                <tr>
-                    <th scope="row">Membership Date</th>
-                    <td><?php echo $membershipdate; ?></td>                 
-                </tr>
-                <tr>
-                    <th scope="row">Accommodation</th>
-                    <td><?php echo $accommodation; ?></td>
-                </tr>
-            </table>
+        <div class="row my-2">
+                <div class="col-md-2 col-sm-1 col-xs-1"></div>
+                <div class="col-md-8 col-sm-10 col-xs-10 mx-auto border border-light my-4 mx-auto">
+                    <div class="mx-auto">
+                        <table class="table table-responsive border border-dark text-center w-50">
+                            <tr>
+                                <th scope="row">ID</th>
+                                <td><?php echo $id; ?></td>                   
+                            </tr>
+                            <tr>
+                                <th scope="row">First Name</th>  
+                                <td><?php echo $firstname; ?></td>                 
+                            </tr>
+                            <tr>
+                                <th scope="row">Last Name</th>
+                                <td><?php echo $lastname; ?></td>                
+                            </tr>
+                            <tr>
+                                <th scope="row">Age</th>
+                                <td><?php echo $age; ?></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Address</th>
+                                <td><?php echo $address; ?></td>                  
+                            </tr>
+                            <tr>
+                                <th scope="row">Membership Date</th>
+                                <td><?php echo $membershipdate; ?></td>                 
+                            </tr>
+                            <tr>
+                                <th scope="row">Accommodation</th>
+                                <td><?php echo $accommodation; ?></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-1 col-xs-1"></div>
         </div>
-        
         <br>
         <!--Second form -->
         <div id="main" style="background-image:url('./images/gym_picture.png'); height:100%; width:100%; background-repeat:no-repeat;

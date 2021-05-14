@@ -19,7 +19,7 @@
 
         <!-- CONTENT -->
         <div id="main" class="img-fluid h-2000 bg bg-success" style="background-image: url('./images/gym.png');">
-            <h1 class="text-center text-light my-4 p-4 bg bg-secondary w-75 mx-auto">Register</h1>
+            <h1 class="text-center text-light mb-4 p-4 bg bg-secondary w-75 mx-auto">Register</h1>
             <div class="row mb-4">
                 <div class="col-md-4"></div>
                 <div class="col-md-4 mx-auto my-4 bg bg-info w-75">
@@ -41,7 +41,7 @@
                             <label class="rad">Last Name:</label><br><input type="text" name ="lastname" class="w-100" 
                             title="Must only contain characters from alphabet and sometimes with approved special characters for names" pattern="^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['-]?)+$" required> <br>
                             <label class="rad">Age:</label><br><input type="number" name ="age" class="w-100" min=18 max=100 required> <br>
-                            <label class="rad">Address:</label><br><input type="text" name ="address"  class="w-100" pattern='\d+[ ](?:[A-Za-z0-9.-]+[ ]?)+(?:Avenue|Lane|Road|Boulevard|Drive|Street|Ave|Dr|Rd|Blvd|Ln|St)\.?' required> <br>
+                            <label class="rad">Address:</label><br><input type="text" name ="address"  class="w-100" required> <br>
                             <label class="rad">Membership Date:</label><br><input type="date" name ="membershipdate"  class="w-100" required> <br>
                             <label class="rad">Accommodations:</label>
                             <textarea name ="accommodation" class="w-100"></textarea><br>

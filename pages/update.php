@@ -137,7 +137,7 @@
     
     <!-- FORM -->
     <div id="main" class="img-fluid h-2000 bg bg-success" style="background-image: url('./images/gym.png'); height: 1000px;">
-        <h1 class="text-center text-light my-4 p-4 bg bg-secondary w-50 mx-auto">Update</h1>
+        <h1 class="text-center text-light mb-4 p-4 bg bg-secondary w-50 mx-auto">Update</h1>
         <div class="row my-2">
             <div class="col-md-3 col-sm-1 col-xs-1"></div>
             <div class="col-md-6 col-sm-10 col-xs-10 mx-auto border border-light my-4 bg-gradient bg-warning w-80">
